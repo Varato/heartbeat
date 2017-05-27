@@ -11,9 +11,9 @@ int main()
 	float s=0, v=0;
 
 	printf("\033[01;31m");
-	for (int t = 0; t < 100; t++){
-	    s = 0.045*sin(0.1*t)+0.1;
-	    if (t != 0) puts("\033[25A");
+	for (int t = 0; t < 86; t++){
+	    s = 0.045*sin(0.5*t)+0.1;
+	    if (t != 0) puts("\033[23A");
 		for (i=0; i < N; i += 3)
 			for (j=0; j<M; j++){
 				x = (j - M/2)*s;
